@@ -18,13 +18,9 @@ module.exports = function(app) {
     var userScores = userData.scores;
 
     var totalDifference;
-
     for (var i = 0; i < friends.length; i++) {
       var currentFriend = friends[i];
       totalDifference = 0;
-
-      console.log(currentFriend.name);
-
         for (var j = 0; j < currentFriend.scores.length; j++) {
         var currentFriendScore = currentFriend.scores[j];
         var currentUserScore = userScores[j];
